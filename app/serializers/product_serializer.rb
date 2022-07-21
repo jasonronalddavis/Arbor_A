@@ -1,6 +1,6 @@
 class StoryTextSerializer 
   include FastJsonapi::ObjectSerializer
-  attributes :id, :name, :description, :comments, :categories, :images
+  attributes :id, :name, :description, :comments, :categories, :images, :users
 
 
   has_many :user_products

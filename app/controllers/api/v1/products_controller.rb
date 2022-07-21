@@ -17,26 +17,26 @@ class Api::V1::ProductsController < ApplicationController
     
       
          def create 
-           if current_api_v1_user
-            @user = current_api_v1_user
-            @image = Image.new(url: params[:image_file])
-            #SETTING IMAGE INSTANCE BY URL NAME AND SAVING IT TO USER RELATION USER.IMAGES
-            @category = Category.find_by_name(params[:categories])
-             #ASSIGNING CATEGORY INSTANCE BY NAME AND SAVING IT TO USER RELATION USER.CATEGORIES
-            @product = Product.new(product_params)
-            #ASSIGNING STORYTEXT INSTANCE BY NAME AND SAVING IT TO USER RELATION USER.STORYTEXT
-            @product.categories << @category
-            @product.images << @image
-            @user.products << @product
-            @user.images << @image
-             if @product.save      
-               render json: @product, status: :created
-             else
-                 render json: {error: "invalid name or password"}
-             end
-         elsif !current_api_v1_user
-             render json: {error: "must be logged in"}  
-        end
+        #    if current_api_v1_user
+        #     @user = current_api_v1_user
+        #     @image = Image.new(url: params[:image_file])
+        #     #SETTING IMAGE INSTANCE BY URL NAME AND SAVING IT TO USER RELATION USER.IMAGES
+        #     @category = Category.find_by_name(params[:categories])
+        #      #ASSIGNING CATEGORY INSTANCE BY NAME AND SAVING IT TO USER RELATION USER.CATEGORIES
+        #     @product = Product.new(product_params)
+        #     #ASSIGNING STORYTEXT INSTANCE BY NAME AND SAVING IT TO USER RELATION USER.STORYTEXT
+        #     @product.categories << @category
+        #     @product.images << @image
+        #     @user.products << @product
+        #     @user.images << @image
+        #      if @product.save      
+        #        render json: @product, status: :created
+        #      else
+        #          render json: {error: "invalid name or password"}
+        #      end
+        #  elsif !current_api_v1_user
+        #      render json: {error: "must be logged in"}  
+        # end
     end
     
     

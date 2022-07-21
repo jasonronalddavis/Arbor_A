@@ -50,3 +50,39 @@
 2022-06-22 18:49:05.902 CDT [2374] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2022-06-22 18:49:13.135 CDT [2382] LOG:  database system was shut down at 2022-06-22 18:48:59 CDT
 2022-06-22 18:49:13.479 CDT [2374] LOG:  database system is ready to accept connections
+2022-07-20 00:33:05.353 CDT [5337] LOG:  starting PostgreSQL 13.7 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2022-07-20 00:33:05.856 CDT [5337] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-20 00:33:05.856 CDT [5337] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-20 00:33:06.188 CDT [5337] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-20 00:33:11.828 CDT [5342] LOG:  database system was interrupted; last known up at 2022-06-22 18:54:16 CDT
+2022-07-20 00:33:27.883 CDT [5342] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-07-20 00:33:28.369 CDT [5342] LOG:  redo starts at 0/1BDF2398
+2022-07-20 00:33:28.369 CDT [5342] LOG:  invalid record length at 0/1BDF2480: wanted 24, got 0
+2022-07-20 00:33:28.369 CDT [5342] LOG:  redo done at 0/1BDF2448
+2022-07-20 00:33:29.195 CDT [5337] LOG:  database system is ready to accept connections
+2022-07-20 05:16:00.621 CDT [5337] LOG:  received fast shutdown request
+2022-07-20 05:16:00.708 CDT [5337] LOG:  aborting any active transactions
+2022-07-20 05:16:00.926 CDT [5337] LOG:  background worker "logical replication launcher" (PID 5357) exited with exit code 1
+2022-07-20 05:16:00.926 CDT [5352] LOG:  shutting down
+2022-07-20 05:16:01.727 CDT [5337] LOG:  database system is shut down
+2022-07-20 06:00:16.356 CDT [7023] LOG:  starting PostgreSQL 13.7 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2022-07-20 06:00:16.678 CDT [7023] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-20 06:00:16.678 CDT [7023] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-20 06:00:17.501 CDT [7023] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-20 06:00:22.635 CDT [7028] LOG:  database system was shut down at 2022-07-20 05:16:01 CDT
+2022-07-20 06:00:24.973 CDT [7023] LOG:  database system is ready to accept connections
+2022-07-20 10:27:58.490 CDT [7034] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-20 10:55:09.930 CDT [7034] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-21 00:57:36.825 CDT [14462] FATAL:  lock file "postmaster.pid" already exists
+2022-07-21 00:57:36.825 CDT [14462] HINT:  Is another postmaster (PID 7023) running in data directory "/usr/local/var/postgres_dev"?
+2022-07-21 00:57:45.175 CDT [7023] LOG:  received fast shutdown request
+2022-07-21 00:57:45.176 CDT [7023] LOG:  aborting any active transactions
+2022-07-21 00:57:45.185 CDT [7023] LOG:  background worker "logical replication launcher" (PID 7036) exited with exit code 1
+2022-07-21 00:57:45.185 CDT [7031] LOG:  shutting down
+2022-07-21 00:57:45.346 CDT [7023] LOG:  database system is shut down
+2022-07-21 00:57:50.708 CDT [14480] LOG:  starting PostgreSQL 13.7 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2022-07-21 00:57:50.910 CDT [14480] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-21 00:57:50.910 CDT [14480] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-21 00:57:50.911 CDT [14480] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-21 00:57:51.410 CDT [14481] LOG:  database system was shut down at 2022-07-21 00:57:45 CDT
+2022-07-21 00:57:51.547 CDT [14480] LOG:  database system is ready to accept connections
