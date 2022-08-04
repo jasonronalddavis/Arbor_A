@@ -86,3 +86,56 @@
 2022-07-21 00:57:50.911 CDT [14480] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2022-07-21 00:57:51.410 CDT [14481] LOG:  database system was shut down at 2022-07-21 00:57:45 CDT
 2022-07-21 00:57:51.547 CDT [14480] LOG:  database system is ready to accept connections
+2022-07-22 06:39:12.933 CDT [14480] LOG:  received smart shutdown request
+2022-07-22 06:39:13.924 CDT [14480] LOG:  background worker "logical replication launcher" (PID 14487) exited with exit code 1
+2022-07-22 06:39:13.925 CDT [14482] LOG:  shutting down
+2022-07-22 06:39:14.606 CDT [14480] LOG:  database system is shut down
+2022-07-27 23:10:56.154 CDT [7444] LOG:  starting PostgreSQL 13.7 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2022-07-27 23:10:56.673 CDT [7444] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-27 23:10:56.673 CDT [7444] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-27 23:10:57.071 CDT [7444] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-27 23:10:59.962 CDT [7449] LOG:  database system was shut down at 2022-07-22 06:39:14 CDT
+2022-07-27 23:11:00.369 CDT [7444] LOG:  database system is ready to accept connections
+2022-07-28 01:27:54.627 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-28 06:00:57.695 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 04:22:56.880 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 04:31:29.921 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:26:07.327 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:27:50.154 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:29:02.756 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:30:20.549 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:31:35.938 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:33:29.844 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:34:41.498 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:35:57.243 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:37:47.330 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:39:12.496 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:40:32.044 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:41:45.905 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:42:57.845 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-07-30 23:48:44.816 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-08-01 02:15:39.139 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-08-01 02:43:19.982 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-08-01 02:47:59.759 CDT [7453] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-08-01 06:57:57.453 CDT [5115] LOG:  starting PostgreSQL 13.7 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2022-08-01 06:57:57.618 CDT [5115] LOG:  listening on IPv6 address "::1", port 5432
+2022-08-01 06:57:57.618 CDT [5115] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-08-01 06:57:57.631 CDT [5115] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-08-01 06:57:58.681 CDT [5116] LOG:  database system was interrupted; last known up at 2022-07-27 23:16:01 CDT
+2022-08-01 06:58:00.445 CDT [5116] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-08-01 06:58:00.547 CDT [5116] LOG:  redo starts at 0/1BDF2910
+2022-08-01 06:58:00.547 CDT [5116] LOG:  invalid record length at 0/1BDF29F8: wanted 24, got 0
+2022-08-01 06:58:00.547 CDT [5116] LOG:  redo done at 0/1BDF29C0
+2022-08-01 06:58:00.654 CDT [5115] LOG:  database system is ready to accept connections
+2022-08-03 03:00:27.283 CDT [5122] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2022-08-04 03:21:48.634 CDT [4134] LOG:  starting PostgreSQL 13.7 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2022-08-04 03:21:51.157 CDT [4134] LOG:  listening on IPv6 address "::1", port 5432
+2022-08-04 03:21:51.157 CDT [4134] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-08-04 03:21:51.603 CDT [4134] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-08-04 03:21:54.920 CDT [4139] LOG:  database system was interrupted; last known up at 2022-08-01 06:58:00 CDT
+2022-08-04 03:22:03.079 CDT [4139] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-08-04 03:22:03.272 CDT [4139] LOG:  redo starts at 0/1BDF2A70
+2022-08-04 03:22:03.272 CDT [4139] LOG:  invalid record length at 0/1BDF2AA8: wanted 24, got 0
+2022-08-04 03:22:03.272 CDT [4139] LOG:  redo done at 0/1BDF2A70
+2022-08-04 03:22:03.915 CDT [4134] LOG:  database system is ready to accept connections
+2022-08-04 03:42:31.815 CDT [4147] LOG:  using stale statistics instead of current ones because stats collector is not responding

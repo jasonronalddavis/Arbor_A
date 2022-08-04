@@ -1,18 +1,27 @@
 Rails.application.routes.draw do
  
 
+
   namespace :api do
   namespace :v1 do
  
+#PROBABLY WON'T USE 
+  #     get 'session/new'
+  #     get 'session/create'
+  #     get 'session/show'
+  #     get 'session/edit'
+  #     get 'session/update'
+  #     get 'session/destroy'
+  #     get 'session/index'
 
 #SESSION ROUTES 
-get 'signup', to: 'sessions#signup'
+get 'signup', to: 'session#signup'
 #SIGNUP POSTS TO USERS CREATE
 post 'signup', to: "users#create"
 get 'login'
-post 'login', to: 'sessions#create'
-get'get_current_user', to: 'sessions#get_current_user'
-delete 'logout', to: 'sessions#destroy'
+post 'login', to: 'session#create'
+get'get_current_user', to: 'session#get_current_user'
+delete 'logout', to: 'session#destroy'
 
 
 post 'products/create', to: 'products#create'

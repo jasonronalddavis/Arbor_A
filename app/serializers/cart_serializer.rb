@@ -4,6 +4,8 @@ class CartSerializer
   
   
     has_many :user_products
+    has_many :cart_products
+    has_many :products, through: :cart_products
     has_many :users, through: :user_products
     has_many :product_categories
     has_many :categories, through: :product_categories
