@@ -3,8 +3,8 @@ class Api::V1::ProductsController < ApplicationController
 
     #LISTS ALL STORIES TO BE ACQUIRED BY FRONT END.
         def index   
-            @product = Product.all
-            render json: ProductSerializer.new(@product)
+            @products = Product.all
+            render json: ProductSerializer.new(@products)
         end
     
     

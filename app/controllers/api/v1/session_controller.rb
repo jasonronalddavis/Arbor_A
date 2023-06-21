@@ -6,7 +6,8 @@ class Api::V1::SessionController < ApplicationController
   def create
     #binding.pry
     @user = User.find_for_authentication(name: session_params[:name])
-    #binding.pry
+   # @user_info = request.env['omniauth.auth']
+   # raise user_info
    if  @user != nil && @user.valid_password?(session_params[:password]) 
        sign_in(@user)
        render json: UserSerializer.new(@user), status: :ok
@@ -73,7 +74,7 @@ class Api::V1::SessionController < ApplicationController
       #MAY NOT USE SANITIZED SESSION PARAMS. LEAVING FOR POTENTIAL USE
       def session_params 
         # binding.pry
-        params.require(:session).permit(:user_id, :id, :password, :name)   
+        params.require(:session).permit(:user_id, :id, :password, :name, :email)   
       end
   
     end

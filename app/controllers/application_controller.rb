@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
     include ::ActionController::Cookies
     #helper_method :find_current_user
-    #before_action :configure_permitted_parameters, if: :devise_controller?
+    before_action :configure_permitted_parameters, if: :devise_controller?
     rescue_from ActiveRecord::RecordNotFound, with:
     :record_not_found
     rescue_from ActiveRecord::RecordInvalid, with: :invalid_record

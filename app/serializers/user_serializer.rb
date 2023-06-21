@@ -2,7 +2,6 @@ class UserSerializer
   include FastJsonapi::ObjectSerializer
   attributes :id, :name, :bio, :products, :comments, :carts, :categories, :images
 
-
   has_many :user_carts
   has_many :product_comments
   has_many :carts, through: :user_carts

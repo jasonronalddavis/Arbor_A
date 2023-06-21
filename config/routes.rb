@@ -22,7 +22,8 @@ get 'login'
 post 'login', to: 'session#create'
 get'get_current_user', to: 'session#get_current_user'
 delete 'logout', to: 'session#destroy'
-
+get 'auth/:provider/callback', to: 'sessions#create'
+get '/login', to: 'sessions#new'
 
 post 'products/create', to: 'products#create'
 
